@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      /* styling the sidebar */
+      body {
+        background-color: #FFB300;
+      }
+      .sidebar {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #303f9f;
+        padding-top: 50px;
+      }
+
+      .sidebar a {
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+      }
+      .content {
+        margin-left: 250px;
+        padding: 20px;
+      }
+
+      i {
+        font-size: 40px;
+        box-sizing: border-box;
+      }
+      thead {
+        margin-bottom: 100px;
+      }
+
+      button {
+        margin-top: 150px;
+        margin-left: 72px;
+        border-radius: 8px;
+        color: white;
+        background-color: black;
+        padding: 5px 10px;
+      }
+      hr {
+        color: white;
+      }
+      h6 {
+        color: white;
+      }
+      a {
+        color: white;
+      }
+      ul {
+        list-style-type: none;
+      }
+      button i {
+        font-size: 20px;
+      }
+      thead {
+        background-color: #FF8F00;
+      }
+      .logout {
+        background-color: #FF8F00;
+      }
+      .atas {
+        font-weight: bold;
+      }
+      .rekap {
+        background-color: #FFB300;
+        border-radius: 10px 0px 0px 10px;
+      }
+      /* contoh */
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="d-flex justify-content-center">
+        <img src="amikom.png" width="50%" height="auto" />
+      </div>
+      <div class="d-flex justify-content-center text-center mt-2">
+        <h6>
+          Ahmad Yusuf Sulthoni <br />
+          23.01.5016
+        </h6>
+      </div>
+      <hr />
+      <ul>
+        <li><a href="/Dasboard/ahmad.html">Dashboard</a></li>
+        <li><a href="#">Mata Kuliah</a></li>
+        <li><a href="#">Data Mahasiswa</a></li>
+        <li class="rekap"><a href="#">Rekap Nilai</a></li>
+        <li><a href="#">Setting</a></li>
+      </ul>
+
+      <button class="button logout">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out
+      </button>
+    </div>
+
+    <!-- Page Content -->
+    <div class="content ">  
+      <h1 class="mb-5 mt-3 "><b>Rekap Nilai</b></h1>
+      <h3 >Pilih Kelas</h3>
+      <div class="container">
+        <div class="row justify-content-start "> 
+            <div class="col-10 d-flex mb-3">
+                <form>
+                    <label for="Pilih Kelas"></label>
+                    <select class="form-select form-select-md mb-3" aria-label="Large select example">
+                        <option value="1">Pemrograman Web</option>
+                        <option value="2">Keamanan Data dan Informasi</option>
+                        <option value="3">Statistika</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div>
+      <table class="table" style="width: 100%;">
+        <thead class="atas">
+          <tr class="text-center">
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Kehadiran</th>
+            <th>Tugas</th>
+            <th>Responsi</th>
+            <th>UTS</th>
+            <th>UAS</th>
+            <th>Konversi</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tbody class="text-center isi">
+          <tr>
+            <td>1</td>
+            <td>Ahmad Yusuf Sulthoni</td>
+            <td>23.01.5016</td>
+            <td>Kehadiran</td>
+            <td>Tugas</td>
+            <td>Responsi</td>
+            <td>UTS</td>
+            <td>UAS</td>
+            <td>Konversi</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ahmad Yusuf Sulthoni</td>
+            <td>23.01.5016</td>
+            <td>Kehadiran</td>
+            <td>Tugas</td>
+            <td>Responsi</td>
+            <td>UTS</td>
+            <td>UAS</td>
+            <td>Konversi</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ahmad Yusuf Sulthoni</td>
+            <td>23.01.5016</td>
+            <td>Kehadiran</td>
+            <td>Tugas</td>
+            <td>Responsi</td>
+            <td>UTS</td>
+            <td>UAS</td>
+            <td>Konversi</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ahmad Yusuf Sulthoni</td>
+            <td>23.01.5016</td>
+            <td>Kehadiran</td>
+            <td>Tugas</td>
+            <td>Responsi</td>
+            <td>UTS</td>
+            <td>UAS</td>
+            <td>Konversi</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ahmad Yusuf Sulthoni</td>
+            <td>23.01.5016</td>
+            <td>Kehadiran</td>
+            <td>Tugas</td>
+            <td>Responsi</td>
+            <td>UTS</td>
+            <td>UAS</td>
+            <td>Konversi</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Ahmad Yusuf Sulthoni</td>
+            <td>23.01.5016</td>
+            <td>Kehadiran</td>
+            <td>Tugas</td>
+            <td>Responsi</td>
+            <td>UTS</td>
+            <td>UAS</td>
+            <td>Konversi</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
